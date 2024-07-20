@@ -1,0 +1,218 @@
+body {
+  font-family: "Playwrite+CU";
+  background-color: #D7BF9F;
+}
+
+h1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image-top {
+  width: 70%;
+  display: block;
+  margin: 10% auto;
+}
+
+.nav-link img {
+  padding-right: 3px;
+  padding-bottom: 4px;
+}
+
+#info {
+  color: black;
+}
+
+#Shayari {
+  background-color: #fff;
+  color: #D7BF9F;
+  text-align: center;
+}
+
+.navbar {
+  padding: 5% 6% 3%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.head-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.headname {
+  color: black;
+  font-size: 2.4em;
+  margin-left: 2px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 0 18px;
+}
+
+.nav-link {
+  color: black !important;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #CEA16F;
+  transition: width 0.4s ease, right 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.nav-item img {
+  margin-right: 5px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: black;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.nav-item {
+  padding: 0 18px;
+  align-items: right;
+}
+
+.hedding {
+  padding: 4% 3% 2%;
+  color: #black;
+  text-align: center;
+}
+
+.row {
+  margin: 0;
+}
+
+.card {
+  margin: 2%;
+}
+
+.btn-dark {
+  border: 0;
+  background-color: #D7BF9F;
+}
+
+@media (max-width: 600px) {
+  .image-top {
+    margin: auto;
+    display: block;
+    padding: 7% 0 7%;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .itme-top {
+    text-align: left;
+  }
+
+  .head-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headname {
+    padding-left: 2px;
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    padding: 5% 2%;
+  }
+
+  .headings-buld {
+    font-size: 2rem;
+  }
+
+  .hedding {
+    text-align: center;
+    padding: 5% 3% 2%;
+  }
+
+  .container-books {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 90%;
+    border-radius: 5px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+
+  .btn-dark {
+    background-color: #D7BF9F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}
+
+#contact {
+  font-size: 1.2rem;
+  text-align: center;
+    padding-top: 3%;
+}
+.footer-info {
+  color: #black;
+  padding:0 3% 0;
+}
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #31363F;
+  color: #D7BF9F;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}

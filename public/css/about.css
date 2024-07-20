@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.head-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.headname {
+  color: black;
+  font-size: 2.4em;
+  margin-left: 2px;
+  cursor: pointer; /* Add this line to change the cursor to a pointer */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 5% 8%;
+}
+
+.row {
+  margin: 0;
+}
+
+.card {
+  margin: 2%;
+}
+
+.details {
+  padding: 5%;
+  margin: 0;
+}
+
+.lastdetails {
+  width: 300px;
+}
+
+body {
+  background: #D7BF9F;
+}
+.c-head{
+  text-align: center;
+}
+.l-details{
+  padding-top: 0;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slide {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slide:before,
+.slide:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.slide:hover .img-slide {
+  animation-play-state: paused;
+}
+
+.img-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.img-slide img {
+  height: 150px;
+  margin: 0 40px;
+}
+
+@media (max-width: 600px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lastdetails {
+    width: 100%;
+    /* Ensures each card takes full width on mobile view */
+    margin-bottom: 20px;
+    /* Adds some space between the cards */
+  }
+
+  .head-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headname {
+    padding-left: 2px;
+    font-size: 1.5em;
+  }
+}
+.text-maker{
+  text-align: center;
+}
